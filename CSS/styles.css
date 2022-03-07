@@ -9,12 +9,19 @@ body{
     color: white;
 }
 
+.main-child{
+    z-index: 10;
+}
+
+
 .main{
     height: 785px;
     background: url(../img/bg.jpg) center;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    position: relative;
 
 }
 
@@ -24,4 +31,18 @@ body{
     max-width: 510px;
 }
 
-
+.gradient{
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+         );
+    
+         position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
